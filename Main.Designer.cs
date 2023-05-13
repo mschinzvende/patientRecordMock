@@ -143,7 +143,7 @@
             label2.Name = "label2";
             label2.Size = new Size(102, 30);
             label2.TabIndex = 1;
-            label2.Text = "Enter the Patient's\r\nFile Number";
+            label2.Text = "Enter the Patient's\r\nBIOMETRIC ID";
             // 
             // textBox1
             // 
@@ -169,9 +169,9 @@
             label3.AutoSize = true;
             label3.Location = new Point(12, 101);
             label3.Name = "label3";
-            label3.Size = new Size(125, 15);
+            label3.Size = new Size(127, 15);
             label3.TabIndex = 8;
-            label3.Text = "PATIENT FILE NUMBER";
+            label3.Text = "PATIENT BIOMETRIC ID";
             // 
             // Main
             // 
