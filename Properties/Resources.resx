@@ -121,7 +121,13 @@
   <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PatientRecords" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PatientRecords.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PersonSil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PersonSil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrintSuccess" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PrintSuccess.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

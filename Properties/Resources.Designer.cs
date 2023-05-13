@@ -73,9 +73,29 @@ namespace HospitalRecords.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PatientRecords {
+            get {
+                object obj = ResourceManager.GetObject("PatientRecords", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PersonSil {
             get {
                 object obj = ResourceManager.GetObject("PersonSil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PrintSuccess {
+            get {
+                object obj = ResourceManager.GetObject("PrintSuccess", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
