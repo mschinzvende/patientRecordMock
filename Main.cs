@@ -49,13 +49,16 @@ namespace HospitalRecords
         private void LoadData()
         {
             try
+
+            
             {
+                listBox1.Items.Clear();
                 // Create a connection to the database
                 SQLiteConnection connection = new SQLiteConnection("Data Source=hospitaldb.sqlite;Version=3;");
 
                 // Open the connection
                 connection.Open();
-
+                
                 // Create a command
                 SQLiteCommand command = new SQLiteCommand("SELECT pid FROM Patients;", connection);
 
