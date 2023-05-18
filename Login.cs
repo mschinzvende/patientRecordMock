@@ -56,6 +56,9 @@ namespace HospitalRecords
                 {
                     isAuthenticated = true;
                 }
+
+                reader.DisposeAsync();
+                connection.Close();
             }
 
             // Display a message to the user

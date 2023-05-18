@@ -93,6 +93,7 @@ namespace HospitalRecords
             {
                 try
                 {
+                    bool isValidPatient = false;
                     // Create a connection to the database
                     SQLiteConnection connection = new SQLiteConnection("Data Source=hospitaldb.sqlite;Version=3;");
 
@@ -105,9 +106,12 @@ namespace HospitalRecords
                     // Execute the command.
                     SQLiteDataReader reader = command.ExecuteReader();
 
+                    
+
                     // Iterate through the results.
-                    while (reader.Read())
+                    if (reader.Read())
                     {
+                        isValidPatient = true;
                         name = reader["pname"] as string;
                         email = reader["pemail"] as string;
                         gender = reader["pgender"] as string;
@@ -117,15 +121,30 @@ namespace HospitalRecords
                         picture = reader["ppicture"] as string;
                         notes = reader["pnotes"] as string;
                         id = int.Parse(textBox1.Text);
-
-
+                        
 
                     }
+                    reader.DisposeAsync();
                     connection.Close();
-                    textBox1.Clear();
-                    groupBox1.Visible = false;
-                    Patient_Record showRecord = new Patient_Record();
-                    showRecord.ShowDialog();
+
+                    if (isValidPatient == false)
+                    {
+                        
+                        MessageBox.Show("Invalid Patient Fingerint. Please try again", "Invalid Patient", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        textBox1.Clear();
+
+                    }
+
+                    else
+                    {
+                        
+                        textBox1.Clear();
+                        groupBox1.Visible = false;
+                        Patient_Record showRecord = new Patient_Record();
+                        showRecord.ShowDialog();
+                    }
+                   
+                    
 
                 }
                 catch (Exception ex)
